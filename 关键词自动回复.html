@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/css.css" type="text/css" rel="stylesheet" />
+    <script src="script/jquery-1.11.1.min.js"></script>
+    <script src="script/chat.js"></script>
+    <style>
+        body {
+            width: 1350px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="headerWrap">
+        <div class="headerbox clearfix">
+            <div class="headerLeft fl">
+                <div class="logowrap">
+                    <img src="img/u15.png" class="fl" />
+                    <p class="logoTit fl">
+                        <span>华润电力</span>
+                        <span class="crpower">CR Power</span>
+                    </p>
+                    <p class="line fl">
+                        <img src="img/u223.png" />
+                    </p>
+                    <p class="webBusiness fl">
+                        <span>网上营业厅</span>
+                        <span class="eng">POWER  BUSINESS HALL</span>
+                    </p>
+                    <p class="location fl">
+                        <span>华润电力</span>
+                        <a class="click_address" href="#">[切换地区]</a>
+                    </p>
+                </div>
+            </div>
+            <div class="headerRight fr">
+                <a class="login_register" href="#">[登陆]</a>
+                <a class="login_register" href="#">[注册]</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="navWrap">
+        <div class="navbox">
+            <ul class="navUl clearfix">
+                <li><a class="active" href="">网厅首页</a></li>
+                <li><a href="">产品服务</a></li>
+                <li><a href="">业务办理</a></li>
+                <li><a href="">用电情况</a></li>
+                <li><a href="">常用工具</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="webtitleWrap">
+        <p class="customer">
+            网上营业厅在线客服
+        </p>
+    </div>
+    <div class="chatWrap">
+        <div class="chatBox clearfix">
+            <div class="dialogBox fl">
+                <div class="dialog" id="dialog">
+                    <div class="download">
+                        <a href="javascript:;">点击加载更多历史记录</a>
+                    </div>
+                    <div class="speak_window">
+                        <div class="speak_box">
+                            <div class="hidedata">
+                                <div class="answer">
+                                    <div class="heard_img fl"><img src="img/touxiang.jpg"></div>
+                                    <div class="answer_text">
+                                        <div class="defaultbtn">
+                                            <div class="name">座席 <span class="getnowtime"></span></div>
+                                            <div class="consultation">您好！欢迎使用客服中心在线客服系统，请问您有什么问题需要咨询？</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="heard_img fr">
+                                        <img src="img/touxiang2.png">
+                                    </div>
+                                    <div class="question_text clearfix" style="max-width: 615px;">
+                                        <div class="defaultbtn">
+                                            <div class="name">张力 2018-07-10 15:15:50</div>
+                                            您好，请问怎么在线申报电量？</div>
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <div class="heard_img fl"><img src="img/touxiang.jpg"></div>
+                                    <div class="answer_text">
+                                        <div class="defaultbtn">
+                                            <div class="name">座席 <span class="getnowtime"></span></div>
+                                            <div class="consultation">您好！欢迎使用客服中心在线客服系统，请问您有什么问题需要咨询？</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="heard_img fr">
+                                        <img src="img/touxiang2.png">
+                                    </div>
+                                    <div class="question_text clearfix" style="max-width: 615px;">
+                                        <div class="defaultbtn">
+                                            <div class="name">张力 2018-07-10 15:15:50</div>
+                                            您好，请问怎么在线申报电量？</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="answer">
+                                <div class="heard_img fl"><img src="img/touxiang.jpg"></div>
+                                <div class="answer_text">
+                                    <div class="defaultbtn">
+                                        <div class="name">座席 <span class="getnowtime"></span></div>
+                                        <div class="consultation">您好！欢迎使用客服中心在线客服系统，请问您有什么问题需要咨询？</div>
+                                        <ul class="questionAuto">
+                                            <li><a href="javascript:;" param='one' class="a1" onClick="auto_question(this)">（1）在线申报电量</a></li>
+                                            <li><a href="javascript:;" param='two' class="a2" onClick="auto_question(this)">（2）营业网点查询</a></li>
+                                            <li><a href="javascript:;" param='three' class="a3" onClick="auto_question(this)">（3）人工在线客服（服务时间8:00-22:00）</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="write_box clearfix">
+                    <textarea class="content"></textarea>
+                    <div class="btn fr">
+                        <span class="surplus">还可以在输入500字</span>
+                        <button class="endservice">结束服务</button>
+                        <button onClick="up_say()" class="send">发送</button>
+                    </div>
+                </div>
+            </div>
+            <div class="dialogMessage fr">
+                <div class="worknumber">
+                    <div class="workerimg">
+                        <p class="img"></p>
+                        <p class="worker">在线服务工号</p>
+                        <p class="number">1002820190</p>
+                    </div>
+                </div>
+                <div class="usermessage">
+                    <p class="usertit">用户信息</p>
+                    <p class="username">用户帐号： <span>zhangli</span></p>
+                    <p class="useradd">用电地址：<span>深圳罗湖区</span></p>
+                </div>
+                <div class="commenquestion">
+                    <p class="usertit">常见问题</p>
+                    <ul class="queslist">
+                        <li><a href="#">Q1：全部</a></li>
+                        <li><a href="#">Q2：电量申报问题</a></li>
+                        <li><a href="#">Q3：套餐申请问题</a></li>
+                        <li><a href="#">Q4：服务开通问题</a></li>
+                        <li><a href="#">Q5：其他问题</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
